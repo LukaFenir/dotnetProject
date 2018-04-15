@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using System;
 
 namespace XamarinTutorial
 {
@@ -21,10 +22,18 @@ namespace XamarinTutorial
             txtNumber = FindViewById<TextView>(Resource.Id.txtNumber);
 
             FindViewById<Button>(Resource.Id.btnIncrement).Click += (o, e) =>
-            txtNumber.Text = (++number).ToString();
+            {
+                txtNumber.Text = (++number).ToString();
+                Console.WriteLine("Button up");
+            };
+
 
             FindViewById<Button>(Resource.Id.btnDecrement).Click += (o, e) =>
-            txtNumber.Text = (--number).ToString();
+            {
+                txtNumber.Text = (--number).ToString();
+                Console.WriteLine("Button down");
+            };
+            
         }
     }
 }
