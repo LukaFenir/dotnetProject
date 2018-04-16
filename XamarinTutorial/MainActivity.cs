@@ -5,7 +5,7 @@ using System;
 
 namespace XamarinTutorial
 {
-    [Activity(Label = "XamarinTutorial", MainLauncher = true)] //Test comment
+    [Activity(Label = "XamarinTutorial", MainLauncher = true)] //Test with authentication
     public class MainActivity : Activity
     {
         TextView txtNumber;
